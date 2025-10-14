@@ -1,118 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CYBER | FUTURE</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DAWINSON MAINA | Cybersecurity Analyst</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Matrix Rain Background -->
-    <canvas id="matrix"></canvas>
-    
-    <!-- Animated Background -->
-    <div class="bg"></div>
+  <!-- Decorative animated canvas and background -->
+  <canvas id="matrix" aria-hidden="true"></canvas>
+  <div class="bg-layer" aria-hidden="true"></div>
 
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="logo">>> CYBER_ARCHITECT</div>
-            <ul>
-                <li><a href="#about">[About]</a></li>
-                <li><a href="#skills">[Skills]</a></li>
-                <li><a href="#projects">[Projects]</a></li>
-                <li><a href="#contact">[Contact]</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header role="banner" class="site-header">
+    <nav class="nav wrap" role="navigation" aria-label="Primary">
+      <div class="logo"><span class="logo-badge">&gt;&gt; DAWINSON_MAINA</span></div>
+      <div class="nav-links" role="menu" aria-label="Main links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="terminal">
-            <div class="terminal-header">
-                <div class="buttons">
-                    <span class="red"></span>
-                    <span class="yellow"></span>
-                    <span class="green"></span>
-                </div>
-                <div class="title">terminal — bash — 80x24</div>
-            </div>
-            <div class="terminal-body">
-                <p><span class="prompt">visitor@portfolio:~$</span> whoami</p>
-                <h1>CLOUD PENTESTER & SECURITY RESEARCHER</h1>
-                <p><span class="prompt">visitor@portfolio:~$</span> find ./skills --name "cloud-security"</p>
-                <p>> AWS | Azure | GCP | Kubernetes | Docker | Terraform</p>
-                <p><span class="prompt">visitor@portfolio:~$</span> <span class="cursor">_</span></p>
-            </div>
+  <main id="content" class="wrap" tabindex="-1" role="main">
+    <!-- HERO / Terminal -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="terminal" role="region" aria-labelledby="hero-title" aria-describedby="hero-desc">
+        <div class="terminal-header" aria-hidden="true">
+          <div class="term-dots" aria-hidden="true">
+            <span class="dot r"></span>
+            <span class="dot y"></span>
+            <span class="dot g"></span>
+          </div>
+          <div class="term-title">terminal — whoami — 80x24</div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>> about_me</h2>
-        <p>I hunt vulnerabilities in cloud environments. Specializing in AWS, Azure, and GCP security assessments, container penetration testing, and automating security workflows.</p>
-    </section>
+        <div class="terminal-body">
+          <div class="prompt-row">
+            <div class="prompt">visitor@portfolio:~$</div>
+            <div id="typed" class="typed" aria-live="polite" aria-atomic="true"></div>
+            <span class="cursor" aria-hidden="true"></span>
+          </div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>> skills_matrix</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>CLOUD</h3>
-                <p>AWS · Azure · GCP · Kubernetes</p>
-            </div>
-            <div class="skill-card">
-                <h3>PENTEST</h3>
-                <p>Burp Suite · Nmap · Metasploit · Custom Scripts</p>
-            </div>
-            <div class="skill-card">
-                <h3>CODE</h3>
-                <p>Python · Bash · PowerShell · Terraform</p>
-            </div>
+          <h1 id="hero-title" class="whoami">DAWINSON MAINA</h1>
+          <p id="hero-desc" class="subtitle">JUNIOR SECURITY ANALYST · RED TEAM OPERATIONS</p>
+
+          <div class="prompt-row small muted">
+            <div class="prompt">visitor@portfolio:~$</div>
+            <div>&gt; Thika, Kiambu, Kenya</div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>> project_repository</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>AWS IAM Privilege Escalation</h3>
-                <p>Found and exploited misconfigured IAM roles in enterprise cloud environment.</p>
-                <span class="tag">CLOUD</span>
-                <span class="tag">AWS</span>
-            </div>
-            <div class="project-card">
-                <h3>Kubernetes Pod Escape</h3>
-                <p>Escaped container constraints to gain node-level access in cluster.</p>
-                <span class="tag">KUBERNETES</span>
-                <span class="tag">CONTAINERS</span>
-            </div>
-            <div class="project-card">
-                <h3>Azure Storage Account Takeover</h3>
-                <p>Exploited publicly accessible storage containers with sensitive data.</p>
-                <span class="tag">AZURE</span>
-                <span class="tag">CLOUD</span>
-            </div>
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title" class="section-title">&gt;&gt; professional_summary</h2>
+      <p class="muted">Persistent and ethically grounded Junior Security Analyst with hands-on experience in penetration testing, modular lab development, and secure tool integration. Skilled in automating recon workflows, troubleshooting OS-level issues, and building
+      scalable attacker/target environments using Docker and virtualization platforms. Adept at documenting reproducible setups and applying best practices in ethical hacking and system hardening.</p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" aria-labelledby="exp-title">
+      <h2 id="exp-title" class="section-title">&gt;&gt; professional_experience</h2>
+
+      <article class="card" data-reveal>
+        <h3>Junior Security Analyst | Red Team Department</h3>
+        <div class="small muted">Yelbridges Ltd — August 2024 – Present</div>
+        <ul>
+          <li>Penetration tests & vulnerability assessments (web, API, network)</li>
+          <li>Red Team simulations and exploit chaining</li>
+          <li>Built pentest environments with Docker & VMware</li>
+          <li>Automated recon & credential fuzzing tooling</li>
+        </ul>
+      </article>
+
+      <article class="card" data-reveal>
+        <h3>IT Support Intern</h3>
+        <div class="small muted">Kenindia Assurance Co. Ltd — Feb 2025 – May 2025</div>
+        <ul>
+          <li>Software installations, hardware troubleshooting</li>
+          <li>Database entry & digital archiving support</li>
+          <li>Customer-facing technical support & system testing</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title" class="section-title">&gt;&gt; skills_matrix</h2>
+
+      <div class="grid skills-grid">
+        <div class="card" data-reveal>
+          <h3>RED TEAM</h3>
+          <p class="muted">Penetration Testing · Vulnerability Assessment · Social Engineering</p>
         </div>
+        <div class="card" data-reveal>
+          <h3>TOOLS & PLATFORMS</h3>
+          <p class="muted">Kali · Burp Suite · Hydra · Wireshark · Docker · VMware · Git</p>
+        </div>
+        <div class="card" data-reveal>
+          <h3>WEB SECURITY</h3>
+          <p class="muted">SQLi · XSS · SSTI · SSRF · CSRF · IDOR · API Testing</p>
+        </div>
+        <div class="card" data-reveal>
+          <h3>PROGRAMMING</h3>
+          <p class="muted">Python · C · JavaScript · Bash · Automation</p>
+        </div>
+        <div class="card" data-reveal>
+          <h3>NETWORKING</h3>
+          <p class="muted">TCP/IP · HTTP/HTTPS · FTP · SSH</p>
+        </div>
+        <div class="card" data-reveal>
+          <h3>BUSINESS</h3>
+          <p class="muted">IT Support · Troubleshooting · Documentation</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>> connect_secure</h2>
-        <p>Ready to fortify your cloud infrastructure?</p>
+    <!-- PROJECTS -->
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title" class="section-title">&gt;&gt; project_repository</h2>
+
+      <div class="grid project-grid">
+        <div class="card" data-reveal>
+          <h3>Automated Recon Workflows</h3>
+          <p class="muted">Automated reconnaissance and credential fuzzing for endpoint discovery and speedier triage.</p>
+          <div class="tags"><span class="tag">PYTHON</span><span class="tag">BASH</span></div>
+        </div>
+
+        <div class="card" data-reveal>
+          <h3>Docker Pentest Environments</h3>
+          <p class="muted">Composable attack/target stacks for realistic and safe testing.</p>
+          <div class="tags"><span class="tag">DOCKER</span><span class="tag">VMWARE</span></div>
+        </div>
+
+        <div class="card" data-reveal>
+          <h3>Cybersecurity Research</h3>
+          <p class="muted">Research into emerging threats with reproducible documentation for knowledge sharing.</p>
+          <div class="tags"><span class="tag">RESEARCH</span><span class="tag">ANALYSIS</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" aria-labelledby="edu-title">
+      <h2 id="edu-title" class="section-title">&gt;&gt; education_training</h2>
+      <div class="card" data-reveal>
+        <h3>Diploma in Business Information Technology</h3>
+        <div class="muted small">The Cooperative University of Kenya — 2023 – 2025 (Graduating Dec 2025)</div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-title">&gt;&gt; connect_secure</h2>
+
+      <div class="contact-grid">
+        <div>
+          <p class="muted"><strong>Location:</strong> Thika, Kiambu, Kenya</p>
+          <p class="muted"><strong>Email:</strong> <a class="link" href="mailto:dawinson435@gmail.com">dawinson435@gmail.com</a></p>
+          <p class="muted"><strong>Phone:</strong> <span class="small muted">0790639461</span></p>
+        </div>
+
         <div class="contact-links">
-            <a href="https://github.com/Miasma01-d" class="cyber-button">GITHUB</a>
-            <a href="https://www.linkedin.com/in/dawinson-maina-750b91339" class="cyber-button">LINKEDIN</a>
-            <a href="mailto:dawinson435@gmail.com" class="cyber-button">EMAIL</a>
+          <a class="btn" href="https://github.com/Miasma01" target="_blank" rel="noopener">GITHUB</a>
+          <a class="btn" href="https://www.linkedin.com/in/dawinson-maina" target="_blank" rel="noopener">LINKEDIN</a>
+          <a class="btn" href="mailto:dawinson435@gmail.com">EMAIL</a>
         </div>
+      </div>
     </section>
 
-    <footer>
-        <p>> [ SYSTEM: ONLINE ] // Last updated: 2024</p>
-    </footer>
+    <footer class="footer muted small"> &gt; [ SYSTEM: ONLINE ] • Last updated: 2024 </footer>
+  </main>
 
-    <script src="matrix.js"></script>
+  <script src="matrix.js"></script>
 </body>
 </html>
