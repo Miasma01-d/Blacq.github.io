@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Dawinson Maina — Junior Security Analyst & Red Team Operator based in Thika, Kenya. Specialising in penetration testing, recon automation, and Docker lab environments." />
   <title>DAWINSON MAINA | Cybersecurity Analyst</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Decorative animated canvas and background -->
@@ -13,24 +14,33 @@
 
   <header role="banner" class="site-header">
     <nav class="nav wrap" role="navigation" aria-label="Primary">
-      <div class="logo"><span class="logo-badge">&gt;&gt; DAWINSON_MAINA</span></div>
-      <div class="nav-links" role="menu" aria-label="Main links">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+      <div class="logo">
+        <span class="logo-badge">&gt;&gt; DAWINSON_MAINA</span>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button class="nav-toggle" id="navToggle" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks" role="menu" aria-label="Main links">
+        <a href="#about"     role="menuitem">About</a>
+        <a href="#experience" role="menuitem">Experience</a>
+        <a href="#skills"    role="menuitem">Skills</a>
+        <a href="#projects"  role="menuitem">Projects</a>
+        <a href="#education" role="menuitem">Education</a>
+        <a href="#contact"   role="menuitem">Contact</a>
       </div>
     </nav>
   </header>
 
   <main id="content" class="wrap" tabindex="-1" role="main">
+
     <!-- HERO / Terminal -->
     <section class="hero" id="home" aria-labelledby="hero-title">
       <div class="terminal" role="region" aria-labelledby="hero-title" aria-describedby="hero-desc">
         <div class="terminal-header" aria-hidden="true">
-          <div class="term-dots" aria-hidden="true">
+          <div class="term-dots">
             <span class="dot r"></span>
             <span class="dot y"></span>
             <span class="dot g"></span>
@@ -58,23 +68,22 @@
 
     <!-- ABOUT -->
     <section id="about" aria-labelledby="about-title">
-      <h2 id="about-title" class="section-title">&gt;&gt; professional_summary</h2>
-      <p class="muted">Persistent and ethically grounded Junior Security Analyst with hands-on experience in penetration testing, modular lab development, and secure tool integration. Skilled in automating recon workflows, troubleshooting OS-level issues, and building
-      scalable attacker/target environments using Docker and virtualization platforms. Adept at documenting reproducible setups and applying best practices in ethical hacking and system hardening.</p>
+      <h2 id="about-title" class="section-title">professional_summary</h2>
+      <p class="muted">Persistent and ethically grounded Junior Security Analyst with hands-on experience in penetration testing, modular lab development, and secure tool integration. Skilled in automating recon workflows, troubleshooting OS-level issues, and building scalable attacker/target environments using Docker and virtualization platforms. Adept at documenting reproducible setups and applying best practices in ethical hacking and system hardening.</p>
     </section>
 
     <!-- EXPERIENCE -->
     <section id="experience" aria-labelledby="exp-title">
-      <h2 id="exp-title" class="section-title">&gt;&gt; professional_experience</h2>
+      <h2 id="exp-title" class="section-title">professional_experience</h2>
 
       <article class="card" data-reveal>
         <h3>Junior Security Analyst | Red Team Department</h3>
         <div class="small muted">Yelbridges Ltd — August 2024 – Present</div>
         <ul>
-          <li>Penetration tests & vulnerability assessments (web, API, network)</li>
+          <li>Penetration tests &amp; vulnerability assessments (web, API, network)</li>
           <li>Red Team simulations and exploit chaining</li>
-          <li>Built pentest environments with Docker & VMware</li>
-          <li>Automated recon & credential fuzzing tooling</li>
+          <li>Built pentest environments with Docker &amp; VMware</li>
+          <li>Automated recon &amp; credential fuzzing tooling</li>
         </ul>
       </article>
 
@@ -83,15 +92,15 @@
         <div class="small muted">Kenindia Assurance Co. Ltd — Feb 2025 – May 2025</div>
         <ul>
           <li>Software installations, hardware troubleshooting</li>
-          <li>Database entry & digital archiving support</li>
-          <li>Customer-facing technical support & system testing</li>
+          <li>Database entry &amp; digital archiving support</li>
+          <li>Customer-facing technical support &amp; system testing</li>
         </ul>
       </article>
     </section>
 
     <!-- SKILLS -->
     <section id="skills" aria-labelledby="skills-title">
-      <h2 id="skills-title" class="section-title">&gt;&gt; skills_matrix</h2>
+      <h2 id="skills-title" class="section-title">skills_matrix</h2>
 
       <div class="grid skills-grid">
         <div class="card" data-reveal>
@@ -99,12 +108,12 @@
           <p class="muted">Penetration Testing · Vulnerability Assessment · Social Engineering</p>
         </div>
         <div class="card" data-reveal>
-          <h3>TOOLS & PLATFORMS</h3>
-          <p class="muted">Kali · Burp Suite · Hydra · Wireshark · Docker · VMware · Git </p>
+          <h3>TOOLS &amp; PLATFORMS</h3>
+          <p class="muted">Kali · Burp Suite · Hydra · Wireshark · Docker · VMware · Git</p>
         </div>
         <div class="card" data-reveal>
           <h3>WEB SECURITY</h3>
-          <p class="muted">SQLi · XSS · SSTI · SSRF · CSRF · IDOR · API Testing . Android Application Security</p>
+          <p class="muted">SQLi · XSS · SSTI · SSRF · CSRF · IDOR · API Testing · Android Application Security</p>
         </div>
         <div class="card" data-reveal>
           <h3>PROGRAMMING</h3>
@@ -123,7 +132,7 @@
 
     <!-- PROJECTS -->
     <section id="projects" aria-labelledby="projects-title">
-      <h2 id="projects-title" class="section-title">&gt;&gt; project_repository</h2>
+      <h2 id="projects-title" class="section-title">project_repository</h2>
 
       <div class="grid project-grid">
         <div class="card" data-reveal>
@@ -148,16 +157,16 @@
 
     <!-- EDUCATION -->
     <section id="education" aria-labelledby="edu-title">
-      <h2 id="edu-title" class="section-title">&gt;&gt; education_training</h2>
+      <h2 id="edu-title" class="section-title">education_training</h2>
       <div class="card" data-reveal>
         <h3>Diploma in Business Information Technology</h3>
-        <div class="muted small">The Cooperative University of Kenya — 2023 – 2025 </div>
+        <div class="muted small">The Cooperative University of Kenya — 2023 – 2025</div>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title" class="section-title">&gt;&gt; connect_secure</h2>
+      <h2 id="contact-title" class="section-title">connect_secure</h2>
 
       <div class="contact-grid">
         <div>
@@ -167,18 +176,16 @@
         </div>
 
         <div class="contact-links">
-          <a class="btn" href="https://github.com/Miasma01-d" target="_blank" rel="noopener">GITHUB</a>
-          <a class="btn" href="https://www.linkedin.com/in/dawinson-maina-750b91339" target="_blank" rel="noopener">LINKEDIN</a>
+          <a class="btn" href="https://github.com/Miasma01-d" target="_blank" rel="noopener noreferrer">GITHUB</a>
+          <a class="btn" href="https://www.linkedin.com/in/dawinson-maina-750b91339" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
           <a class="btn" href="mailto:dawinson435@gmail.com">EMAIL</a>
         </div>
       </div>
     </section>
 
-    <footer class="footer muted small"> &gt; [ SYSTEM: ONLINE ] • Last updated: 2024 </footer>
+    <footer class="footer muted small">&gt; [ SYSTEM: ONLINE ] • Last updated: 2026</footer>
   </main>
 
   <script src="matrix.js"></script>
 </body>
 </html>
-
-
